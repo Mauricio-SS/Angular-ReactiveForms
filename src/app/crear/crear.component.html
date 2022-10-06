@@ -1,17 +1,17 @@
 <div class="container">
     <div class="row">
         <div class="col mt-4">
-            <form>
+            <form  [formGroup]="formularioCreado">
                 <div class="mb-3">
                     <label for="InputName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="InputName">
+                    <input type="text" class="form-control" id="InputName" formControlName="nombre">
                     <div class="alert alert-danger mt-2" role="alert">
                        Nombre requerido
                     </div>
                   </div>
                 <div class="mb-3">
                   <label for="InputEmail1" class="form-label">Correo Electronico</label>
-                  <input type="email" class="form-control" id="InputEmail1">
+                  <input type="email" class="form-control" id="InputEmail1" formControlName="correo">
                   <div class="alert alert-danger mt-2" role="alert">
                     Correo electrónico requerido
                  </div>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="InputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="InputPassword1">
+                  <input type="password" class="form-control" id="InputPassword1" formControlName="password">
                   <div class="alert alert-danger mt-2" role="alert">
                     Contraseña requerida
                  </div>
